@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+/*  Global project variables
+   ========================================================================== */
+
+// Colors
+$color-white: #ffffff;
+$color-black: #000000;
+$color-font-default: $color-black;
+
+$color-error:       #cc0000;
+$color-success:     #59b145;
+$color-alert:       #4479a7;
+
+// Functional colours
+// $color-bg-header: #;
+// $color-bg-main: #;
+// $color-bg-footer: #;
+
+// $color-font-default: #;
+// $color-font-heading: #;
+
+// $color-link-default: #;
+// $color-link-default-hover: #;
+// $color-link-footer: #;
+// $color-link-footer-hover: #;
+
+// $color-input: #;
+// $color-input-bdr: #;
+// $color-input-bg: #;
+// $color-input-hvr-bdr: #;
+// $color-input-fcs-bdr: #;
+// $color-input-fcs-bg: #;
+// $color-input-placeholder: #;
+// $color-input-dsbld-bdr: #;
+
+// Typography
+$font-family-base: helvetica,arial,sans-serif;
+$font-family-bold: helvetica,arial,sans-serif;
+$font-family-heading: helvetica,arial,serif;
+$font-size-base: 16px !default;
+
+$line-height-base: 1.4;
+$line-height-heading: 1.625rem;
+
+// Grid settings
+$columns: 12;
+$sidebar-columns: 4;
+$gutter-width: (1/6);
+
+$breakpoint-to-ems: true;
+$breakpoints: (
+  xxs: 320px,
+  xs: 480px,
+  sm: 768px,
+  md: 992px,
+  lg: 1140px,
+  xl: 1400px,
+  xxl: 1680px
+) !default;

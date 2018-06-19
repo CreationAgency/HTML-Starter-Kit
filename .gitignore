@@ -4,7 +4,7 @@
 /node_modules
 
 # production
-/build
+/build/css/*
 
 # Mac desktop service store files
 .DS_Store

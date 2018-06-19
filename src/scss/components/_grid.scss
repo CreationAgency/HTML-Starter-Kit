@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+/* Grid
+   ========================================================================== */
+
+$susy: (
+  columns: $columns,
+  gutters: $gutter-width
+);
+
+body {
+  min-width: map-get($breakpoints, xxs);
+}
+
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  @include clearfix;
+
+  @include container(map-get($breakpoints, xs));
+
+  @include mappy-bp(sm) {
+    @include container(map-get($breakpoints, sm));
+  }
+
+  @include mappy-bp(md) {
+    @include container(map-get($breakpoints, md));
+  }
+
+  @include mappy-bp(lg) {
+    @include container(map-get($breakpoints, lg));
+  }
+
+  @include mappy-bp(xl) {
+    @include container(map-get($breakpoints, xl));
+  }
+}

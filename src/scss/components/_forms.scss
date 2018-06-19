@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+/* Forms
+   ========================================================================== */
+
+// input[type="email"],
+// input[type="password"],
+// input[type="search"],
+// input[type="tel"],
+// input[type="text"],
+// input[type="url"],
+// textarea {
+//   box-sizing: border-box;
+//   box-shadow: 0 0 0 1px transparent inset;
+//   font-style: normal;
+//   height: 2.5em;
+//   line-height: 2.5em;
+//   margin: 0;
+//   background-color: $color-input-bg;
+
+//   &:hover {
+//     border-color: $color-input-hvr-bdr;
+//     box-shadow: 0 0 0 1px $color-input-hvr-bdr inset;
+
+//     @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+//       box-shadow: none;
+//     }
+//   }
+
+//   &:focus {
+//     background-color: $color-input-fcs-bg;
+//     border-color: $color-input-fcs-bdr;
+//     box-shadow: 0 0 0 1px $color-input-fcs-bdr inset;
+
+//     @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+//       box-shadow: none;
+//     }
+//   }
+// }
+
+// input[disabled][type="email"],
+// input[disabled][type="password"],
+// input[disabled][type="search"],
+// input[disabled][type="tel"],
+// input[disabled][type="text"],
+// input[disabled][type="url"],
+// textarea[disabled] {
+//   cursor: not-allowed;
+
+//   &:hover {
+//     border: 1px solid $color-input-dsbld-bdr;
+//     box-shadow: none
+//   }
+
+//   &:hover:focus {
+//     border: 1px solid $color-input-dsbld-bdr;
+//   }
+// }
+
+// textarea {
+//   height: auto;
+//   line-height: normal;
+//   text-indent: 0;
+//   padding: 5px;
+// }
+
+// input::-moz-placeholder,
+// input:-ms-input-placeholder,
+// input::-webkit-input-placeholder {
+//   color: $color-input-placeholder;
+// }
+
+// label {
+//   display: block;
+//   transition: transform .4s cubic-bezier(0.2, 1, 0.2, 1);
+//   padding-bottom: 0;
+//   font-weight: normal;
+// }

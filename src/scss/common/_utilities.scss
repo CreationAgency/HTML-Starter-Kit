@@ -1,0 +1,70 @@
+@charset "UTF-8";
+
+/* Utility functions/mixins
+   ========================================================================== */
+
+// Clearfix hack
+@mixin clearfix {
+  &::after {
+    clear: both;
+    content: '';
+    display: table;
+  }
+}
+
+// em calculation
+@function em($px, $base: $font-size-base) {
+  @return ($px / $base) * 1em;
+}
+
+// Animation
+@mixin keyframes($animation-name) {
+  @-webkit-keyframes #{$animation-name} {
+    @content;
+  }
+  @-moz-keyframes #{$animation-name} {
+    @content;
+  }
+  @-ms-keyframes #{$animation-name} {
+    @content;
+  }
+  @-o-keyframes #{$animation-name} {
+    @content;
+  }
+  @keyframes #{$animation-name} {
+    @content;
+  }
+}
+
+@mixin animation($str) {
+  animation: #{$str};
+}
+
+/**
+ * the sticky footer mixin
+ **/
+ @mixin sticky-footer($footer-height, $wrapper-selector: unquote("#wrapper"), $container-selector: unquote("#container"), $footer-selector: unquote("#footer")) {
+  html, body {
+    height: 100%;
+  }
+
+  body {
+  	margin: 0px;
+  	padding: 0px;
+  }
+
+  #{$wrapper-selector} {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin-bottom: -$footer-height;
+
+    #{$container-selector} {
+      padding: 0 0 $footer-height 0;
+    } 
+  }
+
+  #{$footer-selector} {
+    height: $footer-height; 
+  }
+}

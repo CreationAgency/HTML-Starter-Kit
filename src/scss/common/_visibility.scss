@@ -1,0 +1,69 @@
+@charset "UTF-8";
+
+/* Controls various visibility settings applied to elements.
+   ========================================================================== */
+
+/*
+ * Hide/show visually and from screen readers
+ */
+@mixin hidden {
+  display: none !important;
+  visibility: hidden;
+}
+
+@mixin shown {
+  display: block !important;
+  visibility: visible;
+}
+
+/*
+ * Hide/show only visually, but have it available for screen readers
+ */
+@mixin visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  &.focusable:active,
+  &.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+  }
+}
+
+@mixin visuallyshown {
+  clip: auto;
+  clip: rect(auto auto auto auto);
+  position: static;
+  overflow: visible;
+  margin: 0;
+  width: auto;
+  height: auto;
+}
+
+/**
+ * Cross browser opacity
+ */
+@mixin opacity($opacity) {
+  @if $opacity == 1 {
+    filter: unquote('progid:DXImageTransform.Microsoft.Alpha(enabled=false)');
+  } @else {
+    filter: unquote(
+      'progid:DXImageTransform.Microsoft.Alpha(Opacity=#{round($opacity * 100)})'
+    );
+  }
+  opacity: $opacity;
+}
+
+@mixin background-opacity($color, $opacity: 0.3) {
+  background: $color; /* The Fallback */
+  background: rgba($color, $opacity);
+}
