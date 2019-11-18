@@ -27,7 +27,7 @@
     "mappy-breakpoints": "^0.2.3",
     "node-sass-chokidar": "^1.4.0",
     "normalize-scss": "^7.0.1",
-    "postcss-cli": "^5.0.1",
+    "postcss-cli": "^6.1.3",
     "susy": "^2.2.14"
   }
 }
