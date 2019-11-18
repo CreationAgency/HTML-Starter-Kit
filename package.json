@@ -22,7 +22,7 @@
   "homepage": "https://github.com/CreationAgency/HTML-Starter-Kit#readme",
   "dependencies": {
     "autoprefixer": "^8.6.5",
-    "browser-sync": "^2.26.5",
+    "browser-sync": "^2.26.7",
     "lint-staged": "^7.3.0",
     "mappy-breakpoints": "^0.2.3",
     "node-sass-chokidar": "^1.3.4",
