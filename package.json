@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/CreationAgency/HTML-Starter-Kit#readme",
   "dependencies": {
-    "autoprefixer": "^9.7.2",
+    "autoprefixer": "^9.7.3",
     "browser-sync": "^2.26.7",
     "lint-staged": "^9.4.3",
     "mappy-breakpoints": "^0.2.3",
