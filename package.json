@@ -4,11 +4,14 @@
   "description": "Template for simple HTML/SASS builds",
   "main": "index.html",
   "scripts": {
-    "precommit": "lint-staged",
     "build-css": "node-sass -w --output-style expanded --include-path src/scss src/scss/main.scss build/css/main.css",
     "post-css": "postcss build/css/*.css --use autoprefixer -r",
     "serve": "browser-sync start --server build --files \"build/*.html\", \"build/css/*.css\"",
-    "start": "npm run build-css & npm run post-css & npm run serve & wait"
+    "start": "npm run build-css & npm run post-css & npm run serve & wait",
+    "lint:scss": "stylelint 'src/**/*.scss' --syntax scss",
+    "lint:scss:fix": "stylelint 'src/**/*.scss' --syntax scss --",
+    "lint:js": "eslint . --ext .js",
+    "lint:js:fix": "npm run lint:js -- --fix"
   },
   "repository": {
     "type": "git",
@@ -23,16 +26,34 @@
   "dependencies": {
     "autoprefixer": "^9.7.4",
     "browser-sync": "^2.26.7",
-    "lint-staged": "^10.0.7",
     "mappy-breakpoints": "^0.2.3",
     "node-sass-chokidar": "^1.4.0",
     "normalize-scss": "^7.0.1",
     "postcss-cli": "^7.1.0",
     "susy": "^2.2.14"
   },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.20.1",
+    "husky": "^4.2.3",
+    "lint-staged": "^10.0.7",
+    "stylelint": "^13.2.0",
+    "stylelint-config-sass-guidelines": "^7.0.0",
+    "stylelint-order": "^4.0.0"
+  },
   "browserslist": [
     "last 2 versions",
     "> 1%",
     "not dead"
-  ]
+  ],
+  "lint-staged": {
+    "*.js": "eslint . --cache --ext .js",
+    "src/**/*.scss": "stylelint --syntax scss --fix"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  }
 }

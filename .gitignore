@@ -21,3 +21,6 @@ ehthumbs.db
 
 # SASS Compiler cache
 .sass-cache
+
+# Lint cache
+.eslintcache
