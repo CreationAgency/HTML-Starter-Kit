@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/CreationAgency/HTML-Starter-Kit#readme",
   "dependencies": {
-    "autoprefixer": "^9.7.4",
+    "autoprefixer": "^9.7.5",
     "browser-sync": "^2.26.7",
     "mappy-breakpoints": "^0.2.3",
     "node-sass-chokidar": "^1.4.0",
