@@ -37,7 +37,7 @@
     "eslint-config-airbnb-base": "^14.1.0",
     "eslint-plugin-import": "^2.20.2",
     "husky": "^4.2.3",
-    "lint-staged": "^10.0.10",
+    "lint-staged": "^10.2.9",
     "stylelint": "^13.2.1",
     "stylelint-config-sass-guidelines": "^7.0.0",
     "stylelint-order": "^4.0.0"
