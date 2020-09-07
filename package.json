@@ -29,7 +29,7 @@
     "mappy-breakpoints": "^0.2.3",
     "node-sass-chokidar": "^1.4.0",
     "normalize-scss": "^7.0.1",
-    "postcss-cli": "^7.1.0",
+    "postcss-cli": "^7.1.2",
     "susy": "^2.2.14"
   },
   "devDependencies": {
